@@ -4,6 +4,7 @@ export const PHONE_TEL = "+5513997076274";
 export const WHATSAPP = "5513997076274";
 export const ADDRESS = "Rua Pedro de Toledo, 179 — Vila Paulista — Cubatão/SP — 11510-090";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá, gostaria de solicitar um orçamento para um serviço industrial.")}`;
+export const INSTAGRAM_URL = "https://www.instagram.com/r3_usinagem/";
 
 export const services = [
   { title: "Usinagem de Campo", short: "Precisão e eficiência onde você precisa.", description: "Serviços de usinagem realizados diretamente no local de instalação do equipamento, reduzindo desmontagens e deslocamentos desnecessários.", applications: ["Usinagem de eixos", "Recuperação de alojamentos", "Usinagem de flanges", "Ajustes dimensionais", "Recuperação de componentes", "Trabalhos em máquinas industriais"] },
