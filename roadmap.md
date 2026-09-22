@@ -4,4 +4,4 @@
 - [x] Rebuild About, Services, Portfolio, Safety, and Contact pages
 - [x] Add validated quote form, map, cookie notice, and WhatsApp actions
 - [x] Add per-page metadata and local business structured data
-- [ ] Validate desktop/mobile layouts and main interactions
+- [x] Validate desktop/mobile layouts and main interactions
