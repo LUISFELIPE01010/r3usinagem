@@ -4,11 +4,11 @@ import { ChevronDown, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react
 import logo from "@/assets/r3-logo-header.jpg.asset.json";
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/r3";
 
-const nav = [
+const nav: ReadonlyArray<{ to: "/" | "/servicos" | "/quem-somos" | "/portfolio" | "/seguranca" | "/contato"; label: string; menu?: boolean }> = [
   { to: "/", label: "Início" }, { to: "/servicos", label: "Serviços", menu: true },
   { to: "/quem-somos", label: "Sobre nós" }, { to: "/portfolio", label: "Portfólio" },
   { to: "/seguranca", label: "Segurança" }, { to: "/contato", label: "Contato" },
-] as const;
+];
 export function Header({ transparent = false }: { transparent?: boolean }) {
   const [open,setOpen]=useState(false); const [scrolled,setScrolled]=useState(false);
   useEffect(()=>{const fn=()=>setScrolled(window.scrollY>20);fn();window.addEventListener("scroll",fn,{passive:true});return()=>window.removeEventListener("scroll",fn)},[]);
