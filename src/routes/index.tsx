@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Clock3, Cog, Factory, Gauge, HardHat, MapPin, MessageCircle, PackageCheck, Phone, Route as RouteIcon, ShieldCheck, Truck, Users, Wrench, Zap } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell"; import { CtaBanner } from "@/components/site/CtaBanner";
-import heroAsset from "@/assets/r3-hero-oficial-3.webp.asset.json"; import heroSmall from "@/assets/r3-hero-oficial-3-800.webp.asset.json"; import baseSmall from "@/assets/r3-base-cubatao-800.webp.asset.json"; import baseAsset from "@/assets/r3-base-cubatao.webp.asset.json"; import field from "@/assets/r3-field-machining.webp"; import precision from "@/assets/r3-precision.webp"; import welding from "@/assets/r3-welding.webp";
+import heroAsset from "@/assets/r3-hero-oficial-4.webp.asset.json"; import heroSmall from "@/assets/r3-hero-oficial-4-800.webp.asset.json"; import baseSmall from "@/assets/r3-base-cubatao-800.webp.asset.json"; import baseAsset from "@/assets/r3-base-cubatao.webp.asset.json"; import field from "@/assets/r3-field-machining.webp"; import precision from "@/assets/r3-precision.webp"; import welding from "@/assets/r3-welding.webp";
 import { PHONE_DISPLAY, WHATSAPP_URL, services } from "@/lib/r3";
 
 const description="R3 Usinagem especializada em usinagem de campo, usinagem de base, soldagem e manutenção industrial. Atendimento em Cubatão, Baixada Santista e todo o Brasil.";
