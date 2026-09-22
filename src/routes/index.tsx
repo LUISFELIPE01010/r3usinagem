@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Clock3, Cog, Factory, Gauge, HardHat, MapPin, MessageCircle, PackageCheck, Route as RouteIcon, ShieldCheck, Truck, Users, Wrench, Zap } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell"; import { CtaBanner } from "@/components/site/CtaBanner";
-import heroAsset from "@/assets/r3-hero-oficial.jpg.asset.json"; import field from "@/assets/r3-field-machining.jpg"; import precision from "@/assets/r3-precision.jpg"; import welding from "@/assets/r3-welding.jpg";
+import heroAsset from "@/assets/r3-hero-oficial.jpg.asset.json"; import baseAsset from "@/assets/r3-base-cubatao.jpg.asset.json"; import field from "@/assets/r3-field-machining.jpg"; import precision from "@/assets/r3-precision.jpg"; import welding from "@/assets/r3-welding.jpg";
 import { PHONE_DISPLAY, WHATSAPP_URL, services } from "@/lib/r3";
 
 const description="R3 Usinagem especializada em usinagem de campo, usinagem de base, soldagem e manutenção industrial. Atendimento em Cubatão, Baixada Santista e todo o Brasil.";
