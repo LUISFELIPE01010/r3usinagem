@@ -92,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -168,6 +168,7 @@ function VLibrasLoader() {
       requestAnimationFrame(positionWidget);
     };
 
+    const load = () => {
     const existingScript = document.getElementById("vlibras-script") as HTMLScriptElement | null;
 
     if (existingScript) {
@@ -181,6 +182,11 @@ function VLibrasLoader() {
       script.onload = initializeVLibras;
       document.body.appendChild(script);
     }
+    };
+    // Adia o widget de acessibilidade para depois que a página ficou interativa.
+    const w = window as typeof window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
+    const schedule = () => setTimeout(() => (w.requestIdleCallback ? w.requestIdleCallback(load, { timeout: 4000 }) : load()), 2500);
+    if (document.readyState === "complete") schedule(); else window.addEventListener("load", schedule, { once: true });
 
     const observer = new MutationObserver(positionWidget);
     observer.observe(document.body, { childList: true, subtree: false });
