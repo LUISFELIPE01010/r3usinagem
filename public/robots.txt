@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://project--3651b129-ef29-4748-b1b7-3964356f392f.lovable.app/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://r3usinagem.com.br/sitemap.xml
