@@ -2,6 +2,7 @@ export const PHONE_DISPLAY = "(13) 99707-6274";
 export const PHONE_SECONDARY = "(13) 98835-5067";
 export const PHONE_TEL = "+5513997076274";
 export const WHATSAPP = "5513997076274";
+export const QUOTE_EMAIL = "usinagemr3@gmail.com";
 export const ADDRESS = "Rua Pedro de Toledo, 179 — Vila Paulista — Cubatão/SP — 11510-090";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Olá, gostaria de solicitar um orçamento para um serviço industrial.")}`;
 export const INSTAGRAM_URL = "https://www.instagram.com/r3_usinagem/";
