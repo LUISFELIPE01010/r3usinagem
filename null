@@ -1,0 +1,2 @@
+ls: cannot access 'vitest.config.*': No such file or directory
+ls: cannot access 'jest.config.*': No such file or directory
