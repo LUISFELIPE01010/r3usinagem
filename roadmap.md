@@ -12,4 +12,4 @@
 - [x] Verify photos and both quote actions across screen sizes
 - [x] Confirm (13) 98835-5067 is available in site contact areas
 
-- [ ] Correct desktop content-photo cropping and keep final CTA images behind text on mobile; verify across pages.
+- [x] Correct desktop content-photo cropping and keep final CTA images behind text on mobile; verify across pages.
