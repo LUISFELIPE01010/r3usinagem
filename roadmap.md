@@ -10,3 +10,4 @@
 - [ ] Replace field-machining photo with the uploaded image
 - [ ] Offer prefilled quote handoffs via email and WhatsApp
 - [ ] Verify photos and both quote actions across screen sizes
+- [ ] Confirm (13) 98835-5067 is available in site contact areas
