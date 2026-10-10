@@ -1,4 +1,4 @@
-type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-vertical" | "corte-metal" | "acabamento-metal" | "torno-cnc";
+type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-vertical" | "corte-metal" | "acabamento-metal" | "torno-cnc" | "forno-rotativo";
 
 type Props = {
   photo: PhotoName;
@@ -7,14 +7,28 @@ type Props = {
   sizes?: string;
 };
 
+// Real pixel sizes of each generated variant, so width/height and the srcSet
+// descriptors always match the files actually served from /img.
+const PHOTOS: Record<PhotoName, { small: [number, number]; large: [number, number] }> = {
+  "operador-fresadora": { small: [600, 401], large: [1200, 801] },
+  "ajuste-maquina": { small: [600, 401], large: [1200, 801] },
+  "operador-torno": { small: [600, 401], large: [1200, 801] },
+  "operador-vertical": { small: [600, 900], large: [1024, 1536] },
+  "corte-metal": { small: [600, 491], large: [1200, 983] },
+  "acabamento-metal": { small: [600, 400], large: [1200, 800] },
+  "torno-cnc": { small: [600, 401], large: [1200, 801] },
+  "forno-rotativo": { small: [600, 997], large: [973, 1616] },
+};
+
 export function WorkshopPhoto({ photo, alt, className, sizes = "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 50vw, 40vw" }: Props) {
+  const { small, large } = PHOTOS[photo];
   return <img
     src={`/img/r3-${photo}-1200.webp`}
-    srcSet={`/img/r3-${photo}-600.webp 600w, /img/r3-${photo}-1200.webp ${photo === "operador-vertical" ? 1024 : 1200}w`}
+    srcSet={`/img/r3-${photo}-600.webp ${small[0]}w, /img/r3-${photo}-1200.webp ${large[0]}w`}
     sizes={sizes}
     alt={alt}
-    width={photo === "operador-vertical" ? 1024 : 1200}
-    height={photo === "operador-vertical" ? 1536 : photo === "corte-metal" ? 983 : 801}
+    width={large[0]}
+    height={large[1]}
     loading="lazy"
     decoding="async"
     className={className}
