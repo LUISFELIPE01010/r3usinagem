@@ -1,4 +1,4 @@
-type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-vertical" | "corte-metal" | "acabamento-metal" | "torno-cnc" | "forno-rotativo" | "equipe" | "soldador-planta" | "usinagem-campo-equipe";
+type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-ajustando" | "corte-metal" | "acabamento-metal" | "torno-cnc" | "forno-rotativo" | "equipe" | "soldador-planta" | "usinagem-campo-equipe";
 
 type Props = {
   photo: PhotoName;
@@ -13,7 +13,7 @@ const PHOTOS: Record<PhotoName, { small: [number, number]; large: [number, numbe
   "operador-fresadora": { small: [600, 401], large: [1200, 801] },
   "ajuste-maquina": { small: [600, 401], large: [1200, 801] },
   "operador-torno": { small: [600, 401], large: [1200, 801] },
-  "operador-vertical": { small: [600, 900], large: [1024, 1536] },
+  "operador-ajustando": { small: [600, 401], large: [1200, 801] },
   "corte-metal": { small: [600, 491], large: [1200, 983] },
   "acabamento-metal": { small: [600, 400], large: [1200, 800] },
   "torno-cnc": { small: [600, 401], large: [1200, 801] },
