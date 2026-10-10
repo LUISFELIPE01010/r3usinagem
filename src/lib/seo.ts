@@ -37,7 +37,8 @@ export const faqs = [
   { q: "O que é usinagem de campo e quando ela é necessária?", a: "Usinagem de campo é a usinagem feita diretamente no local onde o equipamento está instalado, sem precisar desmontá-lo e transportá-lo até uma oficina. Ela é indicada quando a remoção do equipamento é inviável, cara ou demorada — por exemplo, na recuperação de eixos, flanges e alojamentos durante paradas de manutenção." },
   { q: "A R3 Usinagem atende fora de Cubatão e da Baixada Santista?", a: "Sim. A R3 Usinagem tem base em Cubatão/SP, atende toda a Baixada Santista e realiza serviços em todo o Brasil, com deslocamento da equipe e dos equipamentos até a planta do cliente." },
   { q: "Quais equipamentos a R3 Usinagem utiliza?", a: "Na oficina, a R3 Usinagem trabalha com torno mecânico, torno CNC, fresadora, mandrilhadora e retífica cilíndrica, entre outros equipamentos, para usinagem de peças sob medida." },
-  { q: "Qual o prazo médio para um orçamento de usinagem?", a: "O prazo médio para envio de um orçamento é de 3 dias úteis, a partir do recebimento das informações do serviço, como fotos, desenhos ou medidas." },
+  { q: "Qual o prazo médio para um orçamento de usinagem?", a: "O prazo médio para envio de um orçamento é de 1 a 2 dias úteis, a partir do recebimento das informações do serviço, como fotos, desenhos ou medidas." },
+  { q: "A R3 Usinagem atende emergências?", a: "Sim. Para urgências, fale direto pelo WhatsApp (13) 99707-6274: a equipe avalia a situação e organiza a mobilização o mais rápido possível." },
   { q: "Como solicitar um orçamento à R3 Usinagem?", a: `Pelo WhatsApp (13) 99707-6274, pelo formulário da página de Contato ou pessoalmente na base da empresa: ${ADDRESS}.` },
 ];
 export const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
