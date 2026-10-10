@@ -42,6 +42,17 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   const router = useRouter();
   useEffect(() => {
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    // After a new deploy, cached pages may request old files; reload once automatically.
+    try {
+      const key = "r3-auto-reload";
+      const last = Number(sessionStorage.getItem(key) || 0);
+      if (Date.now() - last > 30000) {
+        sessionStorage.setItem(key, String(Date.now()));
+        window.location.reload();
+      }
+    } catch {
+      /* ignore */
+    }
   }, [error]);
 
   return (
