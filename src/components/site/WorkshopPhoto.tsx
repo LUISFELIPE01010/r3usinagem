@@ -1,4 +1,4 @@
-type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-vertical" | "corte-metal" | "acabamento-metal" | "torno-cnc" | "forno-rotativo";
+type PhotoName = "operador-fresadora" | "ajuste-maquina" | "operador-torno" | "operador-vertical" | "corte-metal" | "acabamento-metal" | "torno-cnc" | "forno-rotativo" | "equipe";
 
 type Props = {
   photo: PhotoName;
@@ -18,6 +18,7 @@ const PHOTOS: Record<PhotoName, { small: [number, number]; large: [number, numbe
   "acabamento-metal": { small: [600, 400], large: [1200, 800] },
   "torno-cnc": { small: [600, 401], large: [1200, 801] },
   "forno-rotativo": { small: [600, 503], large: [940, 788] },
+  "equipe": { small: [600, 400], large: [1200, 800] },
 };
 
 export function WorkshopPhoto({ photo, alt, className, sizes = "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 50vw, 40vw" }: Props) {
