@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ChevronDown, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
-const logo = { url: "/img/r3-logo-header.jpg" };
+const logo = { url: "/img/r3-logo.png" };
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/r3";
 
 const nav: ReadonlyArray<{ to: "/" | "/servicos" | "/quem-somos" | "/portfolio" | "/seguranca" | "/contato"; label: string; menu?: boolean }> = [
