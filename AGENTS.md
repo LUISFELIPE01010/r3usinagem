@@ -11,3 +11,5 @@
 
 - Uploaded site photos use optimized responsive WebP variants and a deliberate static mirror in `public/img`; independent Vercel deployments cannot rely on Lovable's asset-serving endpoint.
 - Use WorkshopPhoto for below-the-fold workshop photos so responsive sources, lazy loading, decoding, and intrinsic dimensions remain consistent.
+- Content photos preserve their intrinsic aspect ratio on mobile/tablet; secondary covers show the full image above their text to avoid cropping and text obstruction.
+- Quote requests are client-side handoffs to the selected email or WhatsApp app, with validated, URL-encoded fields and no simulated send or unsupported attachment picker.

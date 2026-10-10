@@ -1,4 +1,4 @@
-import { ADDRESS, INSTAGRAM_URL, services } from "./r3";
+import { ADDRESS, QUOTE_EMAIL, INSTAGRAM_URL, services } from "./r3";
 export const SITE_URL = "https://r3usinagem.com.br";
 export const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 type Crumb = { name: string; path: string };
@@ -11,9 +11,7 @@ export function seo(o: { path: string; title: string; description: string; crumb
       { title: o.title }, { name: "description", content: o.description },
       { property: "og:title", content: o.title }, { property: "og:description", content: o.description },
       { property: "og:url", content: url }, { property: "og:type", content: "website" }, { property: "og:locale", content: "pt_BR" },
-      { property: "og:image", content: OG_IMAGE }, { property: "og:image:width", content: "1200" }, { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Técnico da R3 Usinagem em planta industrial em Cubatão/SP" },
-      { name: "twitter:card", content: "summary_large_image" }, { name: "twitter:title", content: o.title }, { name: "twitter:description", content: o.description }, { name: "twitter:image", content: OG_IMAGE },
+      { name: "twitter:card", content: "summary_large_image" }, { name: "twitter:title", content: o.title }, { name: "twitter:description", content: o.description },
     ],
     links: [{ rel: "canonical", href: url }],
     scripts: schemas.map((s) => ({ type: "application/ld+json", children: JSON.stringify(s) })),
@@ -24,7 +22,7 @@ export const organizationSchema = { "@context": "https://schema.org", "@type": "
 export const localBusinessSchema = {
   "@context": "https://schema.org", "@type": "LocalBusiness", ...business, name: "R3 Usinagem", url: SITE_URL, image: OG_IMAGE, logo: `${SITE_URL}/favicon.png`,
   description: "Usinagem de campo, usinagem de base, soldagem, caldeiraria e manutenção industrial em Cubatão, Baixada Santista e todo o Brasil.",
-  telephone: "+55-13-99707-6274", address: { "@type": "PostalAddress", streetAddress: "Rua Pedro de Toledo, 179 — Vila Paulista", addressLocality: "Cubatão", addressRegion: "SP", postalCode: "11510-090", addressCountry: "BR" },
+  telephone: ["+55-13-99707-6274", "+55-13-98835-5067"], email: QUOTE_EMAIL, address: { "@type": "PostalAddress", streetAddress: "Rua Pedro de Toledo, 179 — Vila Paulista", addressLocality: "Cubatão", addressRegion: "SP", postalCode: "11510-090", addressCountry: "BR" },
   areaServed: [{ "@type": "City", name: "Cubatão" }, { "@type": "AdministrativeArea", name: "Baixada Santista" }, { "@type": "Country", name: "Brasil" }],
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "07:00", closes: "17:00" },
