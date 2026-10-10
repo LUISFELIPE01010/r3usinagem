@@ -6,8 +6,8 @@
 - [x] Add per-page metadata and local business structured data
 - [x] Validate desktop/mobile layouts and main interactions
 - [x] Distribute seven uploaded photos in Home and relevant sections, optimize responsive WebP variants for Vercel, and verify rendering
-- [ ] Show complete photos on mobile/tablet and lighten secondary page covers
-- [ ] Replace field-machining photo with the uploaded image
-- [ ] Offer prefilled quote handoffs via email and WhatsApp
-- [ ] Verify photos and both quote actions across screen sizes
-- [ ] Confirm (13) 98835-5067 is available in site contact areas
+- [x] Show complete photos on mobile/tablet and lighten secondary page covers
+- [x] Replace field-machining photo with the uploaded image
+- [x] Offer prefilled quote handoffs via email and WhatsApp
+- [x] Verify photos and both quote actions across screen sizes
+- [x] Confirm (13) 98835-5067 is available in site contact areas
